@@ -1,0 +1,448 @@
+
+<html>
+    
+    <!-- to do list
+
+left circles
+right circles
+
+
+-->
+
+    <head>
+    
+        <title>Carefully</title>
+        
+       
+             <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+        
+            <link href="../jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet">
+
+            <script src="../jquery-ui-1.12.1/jquery-ui.js"></script>
+
+            <link href="https://fonts.googleapis.com/css2?family=Lexend+Tera&display=swap" rel="stylesheet">
+        
+        <style>
+        
+            /* palette
+                flickr pink: #F72585;
+                dahlia purple: #7209B7;
+                iris blue: #3A0CA3;
+                ultramarine blue: #4361EE;
+                ivvid sky blue: #4CC9F0;
+       
+            */
+           
+            body{
+                margin: 0;
+                padding: 0;
+                animation: color1 1s infinite;
+                animation-direction: alternate;
+                animation-timing-function: ease-in-out;
+            }
+            
+            @keyframes color1{
+                0% { background-color:#F72585;}
+              
+                100% {background-color:  #7209B7;}
+            }
+            
+            @keyframes color2{
+                0% { background-color:#F72585;}
+              
+                100% {background-color:  #3A0CA3;}
+            }
+            
+            @keyframes color3{
+                0% { background-color:#F72585;}
+              
+                100% {background-color:  #4361EE;}
+            }
+            
+             @keyframes color4{
+                0% { background-color:#F72585;}
+              
+                100% {background-color:  #4CC9F0;}
+            }
+            
+             @keyframes color5{
+                0% { background-color: #7209B7;}
+              
+                100% {background-color:  #3A0CA3;}
+            }
+            
+             @keyframes color6{
+                0% { background-color: #7209B7;}
+              
+                100% {background-color:  #4361EE;}
+            }
+            
+            @keyframes color7{
+                0% { background-color: #7209B7;}
+              
+                100% {background-color:  #4CC9F0;}
+            }
+            
+            @keyframes color8{
+                0% { background-color: #3A0CA3;}
+              
+                100% {background-color:  #4361EE;}
+            }
+            
+            @keyframes color9{
+                0% { background-color: #3A0CA3;}
+              
+                100% {background-color:  #4CC9F0;}
+            }
+            
+            @keyframes color10{
+                0% { background-color: #4361EE;}
+              
+                100% {background-color:  #4CC9F0;}
+            }
+            
+            .plainDiv{
+                position: absolute;
+                width: 75px;
+                height: 75px;
+                top: 257;
+                left: 565;
+                z-index: 10;
+                transform: rotate(45deg);
+                border-style: solid;
+                border-color:  #F72585;
+                background-color:  #4CC9F0;
+            }
+            
+            .leftCircle{
+                position: absolute;
+                left: 210px;
+                border-radius: 50%;
+                background-color: #4CC9F0;
+                border-style: solid;
+                border-color: #F72585;
+                opacity: .5;
+            }
+            
+              #div1{
+                position: absolute;
+                top: 45px;
+                width: 500px;
+                height: 500px;
+                z-index: 1;
+            }
+            
+             #div2{
+                position: absolute;
+                top: 95px;
+                width: 400px;
+                height: 400px;
+                z-index: 3;
+            }
+            
+            #div3{
+                position: absolute;
+                top: 145px;
+                width: 300px;
+                height: 300px;
+                z-index: 5;
+            }
+            
+            .rightCircle{
+                position: absolute;
+                border-radius: 50%;
+                opacity: .5;
+                background-color: #4CC9F0;
+                border-style: solid;
+                border-color: #F72585;
+               
+            }
+            
+             #div6{
+                top: 45px;
+                left: 495px;
+                
+                width: 500px;
+                height: 500px;
+                z-index: 2;
+                 opacity: .5;
+            }
+        
+            #div7{
+                top: 95px;
+                left: 595px;
+               
+                width: 400px;
+                height: 400px;
+                 z-index: 4;
+                opacity: .5;
+            }
+        
+            #div8{
+                position: absolute;
+                top: 145px;
+                left: 695px;
+              
+                 width: 300px;
+                height: 300px;
+                 z-index: 6;
+                opacity: .5;
+            }
+            
+            .sideSquare{
+                position: absolute;
+                width: 75px;
+                height: 75px;
+                top: 250;
+                z-index: 1;
+                transform: rotate(45deg);
+            }
+            
+            #div9{
+                position: absolute;
+                left: 102.5px;
+                animation: color2 2s infinite;
+                animation-direction: alternate;
+                animation-timing-function: ease-in-out;
+            }
+            
+             #div10{
+                position: absolute;
+                left: 1028px;
+                animation: color2 2s infinite;
+                animation-direction: alternate;
+                animation-timing-function: ease-in-out;
+            }
+            
+            .plain2{
+                width: 400px;
+                height: 400px;
+                border-radius: 50%;
+                top: 95;
+                left: 400;
+                 opacity: .5;
+            }
+            
+            
+            
+            
+            
+            
+            
+            .color1{
+                animation: color1 .5s infinite;
+                animation-direction: alternate;
+                animation-timing-function: ease-in-out;
+            }
+
+            .color2{
+                animation: color2 .5s infinite;
+                animation-direction: alternate;
+                animation-timing-function: ease-in-out;
+            }
+            
+            .color3{
+                animation: color3 .5s infinite;
+                animation-direction: alternate;
+                animation-timing-function: ease-in-out;
+            }
+            
+            .color4{
+                animation: color4 .5s infinite;
+                animation-direction: alternate;
+                animation-timing-function: ease-in-out;
+            }
+            
+            .color5{
+                animation: color5 .5s infinite;
+                animation-direction: alternate;
+                animation-timing-function: ease-in-out;
+            }
+            
+            .color6{
+                animation: color6 .5s infinite;
+                animation-direction: alternate;
+                animation-timing-function: ease-in-out;
+            }
+            
+            .color7{
+                animation: color7 .5s infinite;
+                animation-direction: alternate;
+                animation-timing-function: ease-in-out;
+            }
+            
+            .color8{
+                animation: color8 .5s infinite;
+                animation-direction: alternate;
+                animation-timing-function: ease-in-out;
+            }
+            
+            .color9{
+                animation: color9 .5s infinite;
+                animation-direction: alternate;
+                animation-timing-function: ease-in-out;
+            }
+            
+            .color10{
+                animation: color10 .5s infinite;
+                animation-direction: alternate;
+                animation-timing-function: ease-in-out;
+            }
+            
+            
+            
+            
+            
+            
+            .plain3{
+                
+               
+                animation: background 1s infinite;
+                animation-direction: alternate;
+                animation-timing-function: ease-in-out;
+            }
+            
+            .correct{
+                
+                
+            }
+            
+            .totalSuccess{
+                
+                background-color: #4361EE !important;
+                animation: celebration 2s infinite !important;
+                animation-timing-function: linear;
+                
+            }
+            
+            @keyframes celebration{
+                0% { transform: rotate(45deg); }
+              
+                100% {transform: rotate(405deg);}
+            }
+            
+        </style>
+    
+    </head>
+    
+    <body id="myBoday">
+    
+       
+        <div class="plainDiv correct"></div>
+        
+        
+            
+        <div id="div1" class="leftCircle"></div>
+        <div id="div2" class="leftCircle correct"></div>
+        <div id="div3" class="leftCircle"></div>
+        
+        <div id="div6" class="rightCircle"></div>
+        <div id="div7" class="rightCircle correct"></div>
+        <div id="div8" class="rightCircle"></div>
+        
+        <div class="sideSquare" id="div9"></div>
+        <div class="sideSquare" id="div10"></div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <script type="text/javascript">
+        
+            alert("The ideal arrangement of shapes produces a motion of the side squares which is pleasing response to being please. Please the thing to get you pleased by the thing. ")
+            
+            $(".plainDiv").click(function(){
+                
+                    $(this).toggleClass("plain2", [1])
+                
+                    $(this).toggleClass("correct")
+                
+                    var randomColor = Math.floor((Math.random() * 10)+1);
+                
+                
+                    $(this).addClass("color" + randomColor);
+                    
+                    
+                
+            });
+            
+            $(".leftCircle").click(function(){
+                
+                    $(this).toggleClass("plain2", [1])
+                
+                    $(this).toggleClass("correct")
+                
+                    var randomColor = Math.floor((Math.random() * 10)+1);
+                
+                
+                    $(this).addClass("color" + randomColor);
+                
+            });
+            
+            
+             $(".rightCircle").click(function(){
+                
+                   
+            
+                    var rightAlign = $(this).css("right");
+                 
+                 
+                    if (rightAlign > "350"){
+                    
+                        
+                        $(this).animate({
+                            left: "+=195",
+                        }, 250 );
+                        
+                    }
+                    
+                    else {
+                        
+                        $(this).animate({
+                            left: "-=195",
+                        }, 250 );
+                        
+                    };   
+                 
+                  //   $(this).toggleClass("plain3", [1])
+                 
+                     $(this).toggleClass("correct")
+                    
+                    var randomColor = Math.floor((Math.random() * 10)+1);
+                
+                
+                    $(this).addClass("color" + randomColor);
+     
+             });
+            
+            
+            $("#myBoday").click(function(){ 
+            
+                var numberCorrect = $(".correct").length;
+                
+                if(numberCorrect == 7){
+                    
+                    $(".sideSquare").addClass("totalSuccess")
+                    
+                }
+                
+                else{
+                    
+                    $(".sideSquare").removeClass("totalSuccess")
+                    
+                }
+            
+            });
+            
+           
+            
+            
+            
+        </script>
+        
+    </body>
+</html>
